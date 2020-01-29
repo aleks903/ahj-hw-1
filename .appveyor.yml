@@ -13,7 +13,7 @@ test_script:
   - npm run lint && npm test
 deploy_script:
   - git config --global credential.helper store
-  - git config --global user.name AppVeyor
+  - git config --global user.name aleks903
   - git config --global user.email ci@appveyor.com
   - echo https://%GITHUB_TOKEN%:x-oauth-basic@github.com>%USERPROFILE%\.git-credentials
   - dos2unix %USERPROFILE%\.git-credentials
