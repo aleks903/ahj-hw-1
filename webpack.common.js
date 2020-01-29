@@ -15,7 +15,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: './index.html',
-      favicon: "./src/favicon.ico"
+      favicon: './src/favicon.ico',
     }),
   ],
   module: {
@@ -35,12 +35,12 @@ module.exports = {
       },
 
       {
-          test: /\.html$/,
-          use: [
-            {
-              loader: 'html-loader',
-            },
-          ],
+        test: /\.html$/,
+        use: [
+          {
+            loader: 'html-loader',
+          },
+        ],
       },
       {
         test: /\.(png)$/,
