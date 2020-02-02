@@ -1,4 +1,4 @@
-image: Ubuntu1804
+image: Visual Studio 2015
 
 stack: node 10
 
@@ -15,6 +15,6 @@ build: off
 
 build_script:
   - yarn build
-  
+
 test_script:
   - yarn lint && yarn test
